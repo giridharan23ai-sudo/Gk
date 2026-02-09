@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: #ff4d6d;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 95%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e63950;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+body.love {
+    background: linear-gradient(to right, #ff4d6d, #ff758c);
+}
+
+body.friend {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+body.affection {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+
+body.marriage {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+body.enemy {
+    background: linear-gradient(to right, #434343, #000000);
+    color: white;
+}
+
+body.sister {
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+}
+
+.result img {
+    width: 150px;
+    margin-top: 10px;
+}
