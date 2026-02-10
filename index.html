@@ -2,34 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FLAMES Calculator</title>
-
-    <!-- Flask-safe way to load CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Game Start</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="{{ bg_class }}">
+<body onload="playStartSound()">
 
 <div class="container">
-    <h1>🔥FLAMES CALCULATOR🔥</h1>
-
-    <form method="POST">
-        <input type="text" name="name1" placeholder="Enter First Name" required>
-        <input type="text" name="name2" placeholder="Enter Second Name" required>
-        <button type="submit">Check Relationship</button>
-    </form>
-
-    {% if result %}
-    <div class="result {{ bg_class }}">
-        <h2>{{ result }}</h2>
-        <img
-            src="{{ url_for('static', filename='images/' + image) }}"
-            alt="{{ result }}">
-    </div>
-    {% endif %}
-
+    <h1>Are you ready for the game</h1>
+    <button onclick="goToGame()">GO</button>
 </div>
+
+<audio id="startSound" src="sounds/start.mp3"></audio>
+
+<script>
+    function playStartSound() {
+        document.getElementById("startSound").play();
+    }
+
+    function goToGame() {
+        window.location.href = "game.html";
+    }
+</script>
 
 </body>
 </html>
-
